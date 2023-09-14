@@ -12,6 +12,7 @@
         body {
             background-color: maroon;
             color: white;
+            font-family: Arial, sans-serif;
         }
 
         .navbar {
@@ -19,9 +20,21 @@
         }
 
         .jumbotron {
-            background: url('your-engineering-video.mp4') no-repeat center center fixed;
+            background: url('your-engineering-video.mp4') no-repeat center center;
             background-size: cover;
             color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron p {
+            font-size: 1.5rem;
+            margin-top: 20px;
         }
 
         .btn-primary {
@@ -32,6 +45,37 @@
         .btn-primary:hover {
             background-color: white;
             color: maroon;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: maroon;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            color: maroon;
+        }
+
+        .feature-description {
+            font-size: 1rem;
+            color: white;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .jumbotron {
+                padding: 50px 0;
+            }
+
+            .jumbotron h1 {
+                font-size: 2rem;
+            }
+
+            .jumbotron p {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -64,20 +108,32 @@
 
     <!-- Hero Section -->
     <div class="jumbotron">
-        <div class="container text-center">
+        <div class="container">
             <h1>Welcome to GANAR Engineering</h1>
             <p>Your Engineering Solution Provider</p>
             <a href="#" class="btn btn-primary btn-lg">Learn More</a>
         </div>
     </div>
 
-    <!-- Main Content Section -->
+    <!-- Features Section -->
     <div class="container">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in vehicula orci, eu pharetra lectus. Donec eget laoreet arcu, a hendrerit odio. Nullam scelerisque mi non justo scelerisque, sed bibendum dui pulvinar.</p>
-
-        <h2>Our Services</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in vehicula orci, eu pharetra lectus. Donec eget laoreet arcu, a hendrerit odio. Nullam scelerisque mi non justo scelerisque, sed bibendum dui pulvinar.</p>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <span class="glyphicon glyphicon-cog feature-icon"></span>
+                <h2 class="feature-title">Expertise</h2>
+                <p class="feature-description">We have a team of highly skilled engineers ready to tackle your projects.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <span class="glyphicon glyphicon-time feature-icon"></span>
+                <h2 class="feature-title">Efficiency</h2>
+                <p class="feature-description">We deliver projects on time and on budget, ensuring your satisfaction.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <span class="glyphicon glyphicon-globe feature-icon"></span>
+                <h2 class="feature-title">Global Reach</h2>
+                <p class="feature-description">We serve clients worldwide, providing engineering solutions internationally.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap JS and jQuery -->
@@ -86,4 +142,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
