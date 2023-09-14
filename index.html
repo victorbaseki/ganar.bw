@@ -3,142 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GANAR Engineering</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <style>
-        /* Custom CSS for the landing page */
-        body {
-            background-color: maroon;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            background-color: black;
-        }
-
-        .jumbotron {
-            background: url('your-engineering-video.mp4') no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .jumbotron h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .jumbotron p {
-            font-size: 1.5rem;
-            margin-top: 20px;
-        }
-
-        .btn-primary {
-            background-color: maroon;
-            border-color: maroon;
-        }
-
-        .btn-primary:hover {
-            background-color: white;
-            color: maroon;
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: maroon;
-        }
-
-        .feature-title {
-            font-size: 1.5rem;
-            color: maroon;
-        }
-
-        .feature-description {
-            font-size: 1rem;
-            color: white;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .jumbotron {
-                padding: 50px 0;
-            }
-
-            .jumbotron h1 {
-                font-size: 2rem;
-            }
-
-            .jumbotron p {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Your Company Landing Page</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">GANAR Engineering</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Your Company</h1>
+            <p>Your one-stop solution for all your needs.</p>
+            <a href="#services" class="cta-button">Discover Our Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>We create beautiful and responsive websites.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile App Development</h3>
+                <p>Build amazing mobile apps for your business.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Digital Marketing</h3>
+                <p>Boost your online presence and grow your business.</p>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- Hero Section -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Welcome to GANAR Engineering</h1>
-            <p>Your Engineering Solution Provider</p>
-            <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team dedicated to delivering high-quality solutions to our clients.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to get started on a project? Reach out to us!</p>
+        <a href="mailto:contact@yourcompany.com" class="cta-button">Contact Us</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
         </div>
-    </div>
-
-    <!-- Features Section -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <span class="glyphicon glyphicon-cog feature-icon"></span>
-                <h2 class="feature-title">Expertise</h2>
-                <p class="feature-description">We have a team of highly skilled engineers ready to tackle your projects.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <span class="glyphicon glyphicon-time feature-icon"></span>
-                <h2 class="feature-title">Efficiency</h2>
-                <p class="feature-description">We deliver projects on time and on budget, ensuring your satisfaction.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <span class="glyphicon glyphicon-globe feature-icon"></span>
-                <h2 class="feature-title">Global Reach</h2>
-                <p class="feature-description">We serve clients worldwide, providing engineering solutions internationally.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </footer>
 </body>
 </html>
